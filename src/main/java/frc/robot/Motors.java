@@ -21,6 +21,9 @@ public class Motors extends SubsystemBase {
     // As always, call if u have questions nerds
     leftClimbMotor = new WPI_TalonFX(0-9);
     rightClimbMotor = new WPI_TalonFX(0-9);
+
+    leftClimbMotor.configFactoryDefault();
+    rightClimbMotor.configFactoryDefault();
   }
 
   public void setSpeed(double speed){
